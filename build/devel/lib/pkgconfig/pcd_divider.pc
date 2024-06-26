@@ -1,0 +1,8 @@
+prefix=/home/sh/catkin_ws/src/pcd_divider/build/devel
+
+Name: pcd_divider
+Description: Description of pcd_divider
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: pcd_divider
+Description: Description of pcd_divider
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

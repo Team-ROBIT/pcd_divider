@@ -9,6 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/sh/catkin_ws/src/pcd_divider/build/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/sh/catkin_ws/src/pcd_divider/build/devel/lib:$LD_LIBRARY_PATH"
+export PATH='/opt/ros/noetic/bin:/home/sh/.local/bin:/home/sh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
 export PKG_CONFIG_PATH="/home/sh/catkin_ws/src/pcd_divider/build/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/sh/catkin_ws/src/pcd_divider/build'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/sh/catkin_ws/src/pcd_divider/build/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

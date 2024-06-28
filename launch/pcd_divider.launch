@@ -1,5 +1,9 @@
 <launch>
-    <arg name="pcd_file" default="/home/sh/catkin_ws/pcd/lab_filtered.pcd" />
+    <arg name="user" default="$(env USER)" />
+    <arg name="pcd_file" default="/home/$(arg user)/catkin_ws/pcd/scans_roi_plat.pcd" />
+    <arg name="output_pcd_file_filtered" default="/home/$(arg user)/catkin_ws/pcd/map_filtered.pcd" />
+    <arg name="output_pcd_file_top" default="/home/$(arg user)/catkin_ws/pcd/map_top.pcd" />
+    <arg name="output_pcd_file_down" default="/home/$(arg user)/catkin_ws/pcd/map_down.pcd" />
     <arg name="z_threshold" default="1.0" />
 
     <param name="pcd_file" value="$(arg pcd_file)" />

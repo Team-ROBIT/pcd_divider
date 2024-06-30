@@ -21,12 +21,14 @@ private:
     std::string output_pcd_file_filtered_;
     std::string output_pcd_file_down_;
     std::string output_pcd_file_top_;
+    std::string output_octomap_file_;
     float z_threshold_;
 
     pcl::PointCloud<pcl::PointXYZ>::Ptr loadPCDFile(const std::string& filename);
     pcl::PointCloud<pcl::PointXYZ>::Ptr applyStatisticalOutlierRemoval(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud);
     void dividePointCloud(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud, pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud_half1, pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud_half2);
     void savePCDFile(const std::string& filename, const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud);
+    void saveOctomapFile(const std::string &filename, const pcl::PointCloud<pcl::PointXYZ>::Ptr &cloud);
 };
 
 #endif // PCD_DIVIDER_NODE_H
